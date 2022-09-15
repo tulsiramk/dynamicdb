@@ -1,7 +1,8 @@
 {
     "name": "tulsiramk/dynamicdb",
     "description": "This library will able to create/alter tables, Insert/Update/Delete records from tables, Handle multiple databases",
-    "type": "library",    
+    "type": "library",
+    "license": "CPOL-1.02",
     "authors": [
         {
             "name": "Tulsiram Kushwah",
