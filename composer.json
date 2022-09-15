@@ -2,7 +2,7 @@
     "name": "tulsiramk/dynamicdb",
     "description": "This library will able to create/alter tables, Insert/Update/Delete records from tables, Handle multiple databases",
     "type": "library",
-    "license": "open-source",
+    "license": "",
     "authors": [
         {
             "name": "Tulsiram Kushwah",
