@@ -10,5 +10,12 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {},
+    "autoload": {
+        "classmap": [           
+        ],
+        "psr-0": {
+            "tulsiramk\\dynamicdb": "vendor/tulsiramk/dynamicdb/src/"
+        }       
+    }
 }
