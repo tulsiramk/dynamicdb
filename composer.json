@@ -12,8 +12,8 @@
     "minimum-stability": "dev",
     "require": {},
     "autoload": {        
-        "psr-0": {
-            "tulsiramk\\dynamicdb": "vendor/tulsiramk/dynamicdb/src/"
+        "psr-4": {
+            "tulsiramk\\dynamicdb\\": "vendor/tulsiramk/dynamicdb/src/"
         }       
     }
 }
