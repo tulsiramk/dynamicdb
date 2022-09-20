@@ -14,7 +14,7 @@ class DynamicDBServiceProvider extends ServiceProvider
     public function register()
     {
         //
-        $this->app->make('Tulsiramk\DynamicDB\DynamicDBController');
+        $this->app->make('tulsiramk\dynamicdb\DynamicDBController');        
     }
 
     /**
