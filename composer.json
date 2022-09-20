@@ -11,9 +11,7 @@
     ],
     "minimum-stability": "dev",
     "require": {},
-    "autoload": {
-        "classmap": [           
-        ],
+    "autoload": {        
         "psr-0": {
             "tulsiramk\\dynamicdb": "vendor/tulsiramk/dynamicdb/src/"
         }       
