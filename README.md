@@ -1,9 +1,14 @@
 # Dynamic DB
 ### Author: Tusliram Kushwah
 
-#### What it does
+# What it does
 This package can create/alter table dynamically, handle multiple databases 
 
+
+
+# How to install
+>Install using composer
+```composer require tulsiramk/dynamicdb```
 
 >Step 1. You need to add the following lines to your root composer.json 
 
@@ -36,7 +41,7 @@ And run the following command from you root directory.
 
 
 
-#### How to use
+# How to use
 
 >Step 1. You need to use trait to your controller
 
