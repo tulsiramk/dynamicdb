@@ -80,7 +80,7 @@ class Products extends Controller
 
     ....
 ```
->Step 2. If you want to use another connection name instead `mysql` then you need to set connection name else leave it.
+>Step 2. If you want to use another connection name instead `mysql` then you need to set connection name else skip step 2.
 
 ```php
 # Set connection name if you are use other then mysql from you config/database.php
