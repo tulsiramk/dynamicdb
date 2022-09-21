@@ -74,7 +74,7 @@ Step 3. You can use any operation from the list
 #### `$this->getData(arg1, arg2) arguments
 
 ```php
-# To insert data into database you need to call following function
+# To get records from database you need to call following function
 
 $this->getData(arg1, arg2)
 
@@ -92,7 +92,7 @@ arg2: string `table_name`;
 #### `$this->insertData(arg1, arg2, arg3) arguments
 
 ```php
-To insert data into database you need to call following function
+# To insert records into database you need to call following function
 
 $this->insertData(arg1, arg2, arg3)
 
@@ -134,7 +134,7 @@ arg3: object $request
 #### `$this->updateData(arg1, arg2, arg3, arg4) arguments
 
 ```php
-To insert data into database you need to call following function
+# To update records into database you need to call following function
 
 $this->updateData(arg1, arg2, arg3, arg4)
 
@@ -180,7 +180,7 @@ arg4: (Where clause) single dimensional array => `['name' => 'john', 'status' =>
 #### `$this->deleteData(arg1, arg2, arg3) arguments
 
 ```php
-To insert data into database you need to call following function
+# To delete record from database you need to call following function
 
 $this->deleteData(arg1, arg2, arg3)
 
