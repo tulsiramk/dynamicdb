@@ -66,26 +66,64 @@ $this->setConName('wordpress');
 Step 3. You can use any operation from the list
 
 - `$this->getData(arg, arg)`
+- `$this->getDataPaginate(arg, arg, arg)`
 - `$this->insertData(arg, arg, arg)`
 - `$this->updateData(arg, arg, arg, arg)`
 - `$this->deleteData(arg, arg, arg)`
 
+______________________________________________________________________________
 
 #### `$this->getData(arg1, arg2) arguments
 
 ```php
 # To get records from database you need to call following function
 
-$this->getData(arg1, arg2)
+$this->getData(arg1, arg2, opt3, opt4, opt5, opt6, opt7)
 
 arg1: string `select columns or * `;
 arg2: string `table_name`; 
+opt3: optional => where clause array or string
+opt4: optional => string order by column_name [Default order ASC]
+opt5: optional => string order by Order [DESC/ASC]
+opt6: optional => int limit of the records
+opt7: optional => int offset of the records
 
 ```
 
 ###### What $this->getData(arg1, arg2) fn does
 - Check table exists or not.
 - Return records or null
+- If limit 1 then its return single collection of data
+
+
+______________________________________________________________________________
+
+
+
+#### `$this->getDataPaginate(arg1, arg2, arg3) arguments
+
+```php
+# To get records with pagination from database you need to call following function
+
+$this->getDataPaginate(arg1, arg2, arg3, opt4, opt5, opt6, opt7, opt8)
+
+arg1: string `select columns or * `;
+arg2: string `table_name`; 
+arg3: int `number of records per page`; 
+opt4: optional => where clause array or string
+opt5: optional => string order by column_name [Default order ASC]
+opt6: optional => string order by Order [DESC/ASC]
+opt7: optional => int limit of the records
+opt8: optional => int offset of the records
+
+```
+
+###### What $this->getData(arg1, arg2) fn does
+- Check table exists or not.
+- Return records or null
+
+
+______________________________________________________________________________
 
 
 
@@ -128,6 +166,7 @@ arg3: object $request
     </tr>
 </table>
 
+______________________________________________________________________________
 
 
 
@@ -175,6 +214,8 @@ arg4: (Where clause) single dimensional array => `['name' => 'john', 'status' =>
     </tr>
 </table>
 
+______________________________________________________________________________
+
 
 
 #### `$this->deleteData(arg1, arg2, arg3) arguments
@@ -196,6 +237,7 @@ arg3: (Where clause) single dimensional array => `['name' => 'john', 'status' =>
 - Check record exists or not.
 - Make new entry to `dd_history` table for take old records
 
+______________________________________________________________________________
 
 
 
