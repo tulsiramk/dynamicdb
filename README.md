@@ -9,7 +9,9 @@ This package can create/alter table dynamically, handle multiple databases
 # How to install
 >First you need to run the following command
 
-```php composer require tulsiramk/dynamicdb```
+```php 
+composer require tulsiramk/dynamicdb
+```
 
 >Step 1. You need to add the following lines to your root composer.json 
 
