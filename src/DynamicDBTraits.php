@@ -609,13 +609,41 @@ trait DynamicDBTraits
         if ($this->schema->hasColumn($table_name, 'trk_status')){
             $cleanData['trk_status'] = 1;
             $cleanData['trk_ip_address'] = $request->ip();
-        }        
-        $insRes = $this->conn->table($table_name)->where($whereCondition)->update($cleanData); 
-        if($insRes){
-            return 'updated';
+        }
+        $rcExists = $this->getData('*', $table_name, $whereCondition);
+        if($rcExists){
+            $history['long_old_rc'] = json_encode($rcExists);
+            $history['long_updated_rc'] = json_encode($cleanData);
+            $history['operation'] = 'deleted';
+            $this->insertData('dd_history', $history, $request);        
+            return $this->conn->table($table_name)->where($whereCondition)->update($cleanData);
         }
         else{
-            return 'Something went wrong';
+            return false;
+        } 
+        
+    }
+
+
+    public function deleteData(string $table_name, $request, $whereCondition){
+        // Get DB connection
+        $this->getDbConnect();
+
+        $res = $this->checkTable($table_name);
+        if($res){
+            $rcExists = $this->getData('*', $table_name, $whereCondition);
+            if($rcExists){
+                $history['long_old_rc'] = json_encode($rcExists);
+                $history['operation'] = 'deleted';
+                $this->insertData('dd_history', $history, $request);
+                return DB::table($table_name)->where($whereCondition)->delete();
+            }
+            else{
+                return false;
+            }
+        }
+        else{
+            return false;
         }
     }
 
