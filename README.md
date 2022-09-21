@@ -63,7 +63,7 @@ Set connection name
 $this->setConName('wordpress');
 
 ```
-Step 3. You can use any operation from the listing
+Step 3. You can use any operation from the list
 
 - `$this->getData(arg, arg)`
 - `$this->insertData(arg, arg, arg)`
