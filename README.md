@@ -1,13 +1,31 @@
+______________________________________________________________________________
+
 # Dynamic DB
 ### Author: Tusliram Kushwah
 
+______________________________________________________________________________
+
 
 - <a href="#what-it-does"> About </a>
+- <a href="#how-to-install"> Install </a>
+- <a href="#how-to-use"> Uses </a>
+- <a href="#this-getdataarg1-arg2-arguments"> Fetch operation </a>
+- <a href="#getdatapaginatearg1-arg2-arg3-arguments"> Fetch with pagination operation </a>
+- <a href="#this-insertdataarg1-arg2-arg3-arguments"> Insert operation </a>
+- <a href="#this-updatedataarg1-arg2-arg3-arg4-arguments"> Update operation </a>
+- <a href="#this-deletedataarg1-arg2-arg3-arguments"> Delete operation </a>
+
+
+______________________________________________________________________________
+
 
 
 
 # What it does
 This package can create/alter table dynamically, handle multiple databases 
+
+
+______________________________________________________________________________
 
 
 
@@ -47,6 +65,7 @@ And then run the following command from your root directory.
 
 ```
 
+______________________________________________________________________________
 
 
 # How to use
