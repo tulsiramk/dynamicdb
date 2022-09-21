@@ -65,9 +65,28 @@ $this->setConName('wordpress');
 ```
 Step 3. You can use any operation from the listing
 
+- `$this->getData(arg, arg)`
 - `$this->insertData(arg, arg, arg)`
 - `$this->updateData(arg, arg, arg, arg)`
 - `$this->deleteData(arg, arg, arg)`
+
+
+#### `$this->getData(arg1, arg2) arguments
+
+```php
+To insert data into database you need to call following function
+
+$this->getData(arg1, arg2)
+
+arg1: string `select columns or * `;
+arg2: string `table_name`; 
+
+```
+
+###### What $this->getData(arg1, arg2) fn does
+- Check table exists or not.
+- Return records or null
+
 
 
 #### `$this->insertData(arg1, arg2, arg3) arguments
@@ -117,7 +136,7 @@ arg3: object $request
 ```php
 To insert data into database you need to call following function
 
-$this->insertData(arg1, arg2, arg3)
+$this->updateData(arg1, arg2, arg3, arg4)
 
 arg1: string `table_name`;
 arg2: single dimensional array => `['db_col_name1' => 'value1', 'db_col_name2' => 'value2', ... ]` 
@@ -163,7 +182,7 @@ arg4: (Where clause) single dimensional array => `['name' => 'john', 'status' =>
 ```php
 To insert data into database you need to call following function
 
-$this->insertData(arg1, arg2, arg3)
+$this->deleteData(arg1, arg2, arg3)
 
 arg1: string `table_name`; 
 arg2: object $request
