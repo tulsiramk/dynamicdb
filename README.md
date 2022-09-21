@@ -58,8 +58,8 @@ class Products extends Controller
 >Step 2. If you want to use another connection name instead `mysql` then you need to set connection name else leave it.
 
 ```php
-Set connection name
-
+# Set connection name if you are use other then mysql from you config/database.php
+# If you are using multiple databases then you need to call below function before make any operation.
 $this->setConName('wordpress');
 
 ```
