@@ -7,7 +7,7 @@ This package can create/alter table dynamically, handle multiple databases
 
 
 # How to install
->Install using composer
+>First you need to run the following command
 ```composer require tulsiramk/dynamicdb```
 
 >Step 1. You need to add the following lines to your root composer.json 
