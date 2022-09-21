@@ -74,7 +74,7 @@ Step 3. You can use any operation from the list
 #### `$this->getData(arg1, arg2) arguments
 
 ```php
-To insert data into database you need to call following function
+# To insert data into database you need to call following function
 
 $this->getData(arg1, arg2)
 
