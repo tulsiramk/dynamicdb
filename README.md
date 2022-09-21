@@ -144,13 +144,6 @@ arg3: object $request
 
 ```
 
-###### What $this->insertData(arg1, arg2, arg3) fn does
-- Check table exists or not.
-- If not exists create the same.
-- If table exists but column not exists
-- Create column also
-- If you use prefix of the list then column type will be the same
-
 <table>
     <tr>
         <td>`db_col_name1_[text]`</td>
@@ -169,6 +162,14 @@ arg3: object $request
         <td>This will create `db_col_name1` column with type `varchar(255)`</td>
     </tr>
 </table>
+
+
+###### What $this->insertData(arg1, arg2, arg3) fn does
+- Check table exists or not.
+- If not exists create the same.
+- If table exists but column not exists
+- Create column also
+- If you use prefix of the list then column type will be the same
 
 ______________________________________________________________________________
 
@@ -188,17 +189,6 @@ arg4: (Where clause) single dimensional array => `['name' => 'john', 'status' =>
 
 ```
 
-
-
-###### What $this->updateData(arg1, arg2, arg3, arg4) fn does
-- Check table exists or not.
-- If not exists create the same.
-- If table exists but column not exists
-- Create column also
-- If you use prefix of the list then column type will be the same (for new column; existed column type will not change)
-- Make new entry to `dd_history` table for take old records 
-- 
-
 <table>
     <tr>
         <td>`db_col_name1_[text]`</td>
@@ -217,6 +207,16 @@ arg4: (Where clause) single dimensional array => `['name' => 'john', 'status' =>
         <td>This will create `db_col_name1` column with type `varchar(255)`</td>
     </tr>
 </table>
+
+
+###### What $this->updateData(arg1, arg2, arg3, arg4) fn does
+- Check table exists or not.
+- If not exists create the same.
+- If table exists but column not exists
+- Create column also
+- If you use prefix of the list then column type will be the same (for new column; existed column type will not change)
+- Make new entry to `dd_history` table for take old records 
+- 
 
 ______________________________________________________________________________
 
