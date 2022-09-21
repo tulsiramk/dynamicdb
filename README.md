@@ -77,7 +77,7 @@ Step 3. You can use any operation from the list
 
 ______________________________________________________________________________
 
-#### `$this->getData(arg1, arg2) arguments
+#### $this->getData(arg1, arg2) arguments
 
 ```php
 # To get records from database you need to call following function
@@ -104,7 +104,7 @@ ______________________________________________________________________________
 
 
 
-#### `$this->getDataPaginate(arg1, arg2, arg3) arguments
+#### $this->getDataPaginate(arg1, arg2, arg3) arguments
 
 ```php
 # To get records with pagination from database you need to call following function
@@ -131,7 +131,7 @@ ______________________________________________________________________________
 
 
 
-#### `$this->insertData(arg1, arg2, arg3) arguments
+#### $this->insertData(arg1, arg2, arg3) arguments
 
 ```php
 # To insert records into database you need to call following function
@@ -174,7 +174,7 @@ ______________________________________________________________________________
 
 
 
-#### `$this->updateData(arg1, arg2, arg3, arg4) arguments
+#### $this->updateData(arg1, arg2, arg3, arg4) arguments
 
 ```php
 # To update records into database you need to call following function
@@ -222,7 +222,7 @@ ______________________________________________________________________________
 
 
 
-#### `$this->deleteData(arg1, arg2, arg3) arguments
+#### $this->deleteData(arg1, arg2, arg3) arguments
 
 ```php
 # To delete record from database you need to call following function
