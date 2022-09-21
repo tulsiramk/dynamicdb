@@ -25,7 +25,7 @@ composer require tulsiramk/dynamicdb
 }
 ```
 
-And run the following command from you root directory.
+And then run the following command from your root directory.
 ```composer dump-autolo```
 
 
