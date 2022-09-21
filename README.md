@@ -31,13 +31,13 @@ ______________________________________________________________________________
 
 
 # How to install
->First you need to run the following command
+>Step 1. You need to run the following command
 
 ```php 
 composer require tulsiramk/dynamicdb
 ```
 
->Step 1. You need to add the following lines to your root composer.json 
+>Step 2. You need to add the following lines to your root composer.json 
 
 
 ```php
@@ -54,7 +54,7 @@ And then run the following command from your root directory.
 
 
 
->Step 2. You need to add service provider to you `config/app.php`
+>Step 3. You need to add service provider to you `config/app.php`
 
 
 ```php
