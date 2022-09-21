@@ -143,7 +143,7 @@ arg2: single dimensional array => `['db_col_name1' => 'value1', 'db_col_name2' =
 arg3: object $request
 
 ```
-### prefix of the argument arg2
+###### prefix of the argument arg2
 
 <table>
     <tr>
@@ -189,7 +189,7 @@ arg3: object $request
 arg4: (Where clause) single dimensional array => `['name' => 'john', 'status' => 1, ... ]` 
 
 ```
-### prefix of the argument arg2
+###### prefix of the argument arg2
 
 <table>
     <tr>
