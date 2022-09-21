@@ -2,7 +2,7 @@
 ### Author: Tusliram Kushwah
 
 
-- <a href="#what-id-does"> About </a>
+- <a href="#what-it-does"> About </a>
 
 
 
