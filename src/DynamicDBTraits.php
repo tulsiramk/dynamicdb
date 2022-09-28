@@ -316,7 +316,7 @@ trait DynamicDBTraits
      * array = ['ColName user'] == col_name_user
      * array = ['UserAddress *^%$$ hoMe'] == user_address_ho_me
      * 
-     * Extra columns [id (int, auto_increment, primary_key, not null), trk_status (int not null), trk_created_at (datetime default CURRENT_TIMESTAMP, not null), trk_updated_at (datetime null), trk_ip_address (varchar 255, null)]
+     * Extra columns [id (int, auto_increment, primary_key, not null), dd_status (int not null), trk_created_at (datetime default CURRENT_TIMESTAMP, not null), trk_updated_at (datetime null), dd_ip_address (varchar 255, null)]
      * 
      * if table created then return true else return false 
      * 
@@ -363,10 +363,10 @@ trait DynamicDBTraits
 
                 //---Extra columns--
                 
-                $create_table_query .= "trk_status int NOT NULL, ";
-                $create_table_query .= "trk_created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, ";
-                $create_table_query .= "trk_updated_at TIMESTAMP NULL, ";
-                $create_table_query .= "trk_ip_address varchar(255) NULL, ";
+                $create_table_query .= "dd_status int NOT NULL, ";
+                $create_table_query .= "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, ";
+                $create_table_query .= "updated_at TIMESTAMP NULL, ";
+                $create_table_query .= "dd_ip_address varchar(255) NULL, ";
 
                 $create_table_query .= "PRIMARY KEY (id)"; 
                 $create_table_query .= ")";
@@ -508,10 +508,10 @@ trait DynamicDBTraits
         
         $cleanData = $this->cleanData($data); 
         //---Extra columns--
-        //dd($this->schema->hasColumn($table_name, 'trk_status'));
-        if ($this->schema->hasColumn($table_name, 'trk_status')){
-            $cleanData['trk_status'] = 1;
-            $cleanData['trk_ip_address'] = $request->ip();
+        //dd($this->schema->hasColumn($table_name, 'dd_status'));
+        if ($this->schema->hasColumn($table_name, 'dd_status')){
+            $cleanData['dd_status'] = 1;
+            $cleanData['dd_ip_address'] = $request->ip();
         }
 
         
@@ -606,9 +606,9 @@ trait DynamicDBTraits
 
         $cleanData = $this->cleanData($data); 
         //---Extra columns--
-        if ($this->schema->hasColumn($table_name, 'trk_status')){
-            $cleanData['trk_status'] = 1;
-            $cleanData['trk_ip_address'] = $request->ip();
+        if ($this->schema->hasColumn($table_name, 'dd_status')){
+            $cleanData['dd_status'] = 1;
+            $cleanData['dd_ip_address'] = $request->ip();
         }
         $rcExists = $this->getData('*', $table_name, $whereCondition);
         if($rcExists){
