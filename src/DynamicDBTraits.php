@@ -615,6 +615,7 @@ trait DynamicDBTraits
             $history['long_old_rc'] = json_encode($rcExists);
             $history['long_updated_rc'] = json_encode($cleanData);
             $history['operation'] = 'deleted';
+            $history['trk_status'] = 1;
             $this->insertData('dd_history', $history, $request);        
             return $this->conn->table($table_name)->where($whereCondition)->update($cleanData);
         }
